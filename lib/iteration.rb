@@ -1,30 +1,16 @@
 def join_ingredients(src)
   row_index = 0
+  string = Array.new
 while row_index < src.count do
   element_index = 0
   while element_index < src[row_index].count do
-    array = ["I love #{[row_index][element_index]} and #{[row_index][element_index]} on my pizza"].join
-    puts array
+    string.push("I love #{src[element_index][0]} and #{src[element_index][1]} on my pizza")
     element_index += 1
   end
   row_index += 1
+  string
 end
 
-def join_ingredients(src)
-  iter = 0
-  newString = Array.new
-  while iter < src.length do
-    newString.push("I love #{src[iter][0]} and #{src[iter][1]} on my pizza")
-    iter += 1
-  end
-  newString
-end
-  
-  
-  
-  
-  
-  
   
   #array_1 = [['pepperoni', 'sausage'], ['green olives', 'green peppers'], ['onions', 'pineapple']],
   #array = ["I love #{array_1[0]} and #{array_1[1]} on my pizza"]
@@ -35,8 +21,6 @@ end
   #
   # "I love (inner array element 0) and (inner array element 1) on my pizza""
   # As such, there should be a new String for each inner array, or pair
-  array
-end
 
 def find_greater_pair(src)
   # src will be an array of [ [number1, number2], ... [numberN, numberM] ]
