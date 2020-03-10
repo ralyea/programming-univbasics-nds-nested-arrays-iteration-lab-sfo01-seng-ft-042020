@@ -18,6 +18,7 @@ end
   # As such, there should be a new String for each inner array, or pair
 
 def find_greater_pair(src)
+  i = 0
   numArray = Array.new
   while i < src.length do
     if src[i][0] > src[i][1]
