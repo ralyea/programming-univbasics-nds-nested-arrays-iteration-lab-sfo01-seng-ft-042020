@@ -8,7 +8,17 @@ while row_index < src.count do
     element_index += 1
   end
   row_index += 1
-end  
+end
+
+def join_ingredients(src)
+  iter = 0
+  newString = Array.new
+  while iter < src.length do
+    newString.push("I love #{src[iter][0]} and #{src[iter][1]} on my pizza")
+    iter += 1
+  end
+  newString
+end
   
   
   
