@@ -1,7 +1,7 @@
 def join_ingredients(src)
   count = 0
   string = Array.new
-  while iter < src.length do
+  while count < src.length do
     string.push("I love #{src[count][0]} and #{src[count][1]} on my pizza")
     count += 1
   end
