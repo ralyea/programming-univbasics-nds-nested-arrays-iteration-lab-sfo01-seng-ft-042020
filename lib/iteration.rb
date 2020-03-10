@@ -1,17 +1,13 @@
 def join_ingredients(src)
-  row_index = 0
+  count = 0
   string = Array.new
-while row_index < src.count do
-  element_index = 0
-  while element_index < src[row_index].count do
-    string.push("I love #{src[element_index][0]} and #{src[element_index][1]} on my pizza")
-    element_index += 1
+  while iter < src.length do
+    string.push("I love #{src[count][0]} and #{src[count][1]} on my pizza")
+    count += 1
   end
-  row_index += 1
   string
 end
 
-  
   #array_1 = [['pepperoni', 'sausage'], ['green olives', 'green peppers'], ['onions', 'pineapple']],
   #array = ["I love #{array_1[0]} and #{array_1[1]} on my pizza"]
   # Given an Array of 2-element Arrays ( [ [food1, food2], [food3, # food4]....[foodN, foodM]]):
