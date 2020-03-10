@@ -22,9 +22,9 @@ def find_greater_pair(src)
   numArray = Array.new
   while i < src.length do
     if src[i][0] > src[i][1]
-      numberArray.push(src[i][0])
+      numArray.push(src[i][0])
     else
-      numberArray.push(src[i][1])
+      numArray.push(src[i][1])
     end
     i+=1
   end
